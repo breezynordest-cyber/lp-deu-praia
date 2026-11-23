@@ -4,219 +4,14 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>DEU PRAIA | Coleção Banho de Cheiro · Réveillon 2027</title>
-  <meta name="description" content="Moda autoral em crochê artesanal criada e tecida individualmente por Elediane Caldas Cunha. Coleção Banho de Cheiro — Edição Limitada de Réveillon 2027.">
   <link rel="preconnect" href="https://googleapis.com">
   <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --bg: #faf6ef;
-      --sand: #f1e8da;
-      --surface: #ffffff;
-      --terracotta: #8e4a32;
-      --terracotta-dark: #6f3723;
-      --tapajos: #1f4e46;
-      --gold: #b68a4c;
-      --text: #2a211b;
-      --muted: #685a50;
-      --line: #e2d5c3;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { scroll-behavior: smooth; }
-    body {
-      font-family: 'Montserrat', sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.65;
-    }
-    .wrap { width: min(1120px, 90%); margin: 0 auto; }
-    .top-banner {
-      background: var(--tapajos);
-      color: #f7f2e8;
-      text-align: center;
-      font-size: 0.76rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 10px 16px;
-      font-weight: 500;
-    }
-    .navbar {
-      background: rgba(250, 246, 239, 0.96);
-      border-bottom: 1px solid var(--line);
-      position: sticky;
-      top: 0;
-      z-index: 50;
-    }
-    .nav-wrap {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 16px 0;
-      gap: 16px;
-    }
-    .brand { text-decoration: none; color: var(--text); display: flex; flex-direction: column; }
-    .brand-main {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.65rem;
-      font-weight: 700;
-      letter-spacing: 0.14em;
-      line-height: 1;
-      color: var(--terracotta);
-    }
-    .brand-sub { font-size: 0.62rem; letter-spacing: 0.18em; color: var(--muted); margin-top: 4px; }
-    .nav-links { display: flex; gap: 24px; }
-    .nav-links a { text-decoration: none; color: var(--text); font-size: 0.85rem; font-weight: 500; }
-    .nav-links a:hover { color: var(--terracotta); }
-    .btn {
-      display: inline-block;
-      text-decoration: none;
-      font-size: 0.85rem;
-      font-weight: 600;
-      padding: 13px 24px;
-      border-radius: 4px;
-      text-align: center;
-    }
-    .btn-primary { background: var(--terracotta); color: #ffffff; }
-    .btn-primary:hover { background: var(--terracotta-dark); }
-    .btn-secondary { border: 1px solid var(--terracotta); color: var(--terracotta); background: transparent; }
-    .btn-secondary:hover { background: var(--sand); }
-    .btn-outline { border: 1px solid var(--terracotta); color: var(--terracotta); padding: 10px 18px; font-size: 0.8rem; }
-    .btn-outline:hover { background: var(--terracotta); color: #ffffff; }
-    .btn-light { background: #faf6ef; color: var(--tapajos); font-weight: 700; }
-    .btn-full { width: 100%; margin-top: 14px; }
-    .kicker {
-      font-size: 0.72rem;
-      font-weight: 700;
-      letter-spacing: 0.18em;
-      color: var(--gold);
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-    h1, h2, h3 { font-family: 'Cormorant Garamond', serif; font-weight: 600; line-height: 1.15; }
-    h1 { font-size: clamp(2.2rem, 4.2vw, 3.4rem); margin-bottom: 20px; }
-    h2 { font-size: clamp(1.9rem, 3.4vw, 2.7rem); margin-bottom: 16px; }
-    h1 em, h2 em { font-style: italic; color: var(--terracotta); }
-    .hero { padding: 60px 0 76px; }
-    .hero-grid { display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 48px; align-items: center; }
-    .lead { font-size: 1rem; color: var(--muted); margin-bottom: 28px; max-width: 540px; }
-    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin-bottom: 18px; }
-    .hero-note { font-size: 0.8rem; color: var(--tapajos); font-weight: 600; }
-    .visual-frame {
-      border-radius: 12px;
-      overflow: hidden;
-      border: 1px solid var(--line);
-      background: var(--sand);
-      aspect-ratio: 3 / 4;
-    }
-    .visual-frame img, .product-img img, .creator-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
-    .img-placeholder {
-      width: 100%;
-      height: 100%;
-      min-height: 320px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 24px;
-      color: var(--muted);
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 1.25rem;
-      background: linear-gradient(135deg, #efe4d3, #e4d3ba);
-    }
-    .section { padding: 76px 0; }
-    .section-sand { background: var(--sand); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-    .section-head { max-width: 680px; margin-bottom: 40px; }
-    .intro { color: var(--muted); font-size: 0.96rem; }
-    .catalog-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px; }
-    .product-card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: 10px;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-    .product-img { position: relative; aspect-ratio: 4 / 4; background: var(--sand); }
-    .badge {
-      position: absolute;
-      top: 14px;
-      left: 14px;
-      background: var(--tapajos);
-      color: #ffffff;
-      font-size: 0.7rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      padding: 6px 12px;
-      border-radius: 3px;
-    }
-    .badge-promo { background: var(--terracotta); }
-    .product-body { padding: 26px; flex: 1; display: flex; flex-direction: column; }
-    .product-tag { font-size: 0.68rem; font-weight: 700; letter-spacing: 0.14em; color: var(--gold); margin-bottom: 6px; }
-    .product-body h3 { font-size: 1.65rem; margin-bottom: 10px; }
-    .product-desc { font-size: 0.9rem; color: var(--muted); margin-bottom: 18px; }
-    .product-price { margin-top: auto; padding-top: 14px; border-top: 1px solid var(--line); }
-    .price-old { display: block; font-size: 0.8rem; color: var(--muted); text-decoration: line-through; }
-    .price-now { display: block; font-family: 'Cormorant Garamond', serif; font-size: 1.75rem; font-weight: 700; color: var(--tapajos); }
-    .price-note { display: block; font-size: 0.75rem; color: var(--muted); }
-    .moments-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 28px; }
-    .moment-card { background: var(--bg); border: 1px solid var(--line); padding: 32px; border-radius: 8px; }
-    .moment-num { font-size: 0.72rem; font-weight: 700; letter-spacing: 0.16em; color: var(--terracotta); display: block; margin-bottom: 10px; }
-    .moment-card h3 { font-size: 1.6rem; margin-bottom: 10px; }
-    .moment-card p { font-size: 0.92rem; color: var(--muted); }
-    .ritual-box {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-left: 5px solid var(--tapajos);
-      padding: 44px;
-      border-radius: 8px;
-    }
-    .ritual-list { margin-top: 18px; padding-left: 20px; display: grid; gap: 10px; color: var(--muted); font-size: 0.95rem; }
-    .ritual-list strong { color: var(--text); }
-    .creator-grid { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: 44px; align-items: center; }
-    .creator-img { border-radius: 10px; overflow: hidden; border: 1px solid var(--line); aspect-ratio: 3 / 4; }
-    .creator-grid p { margin-bottom: 16px; color: var(--muted); font-size: 0.95rem; }
-    .text-link { color: var(--terracotta); font-weight: 600; font-size: 0.88rem; text-decoration: none; }
-    .faq-wrap { max-width: 780px; }
-    .faq-list { margin-top: 28px; border-top: 1px solid var(--line); }
-    details { border-bottom: 1px solid var(--line); padding: 18px 0; }
-    summary { font-family: 'Cormorant Garamond', serif; font-size: 1.35rem; font-weight: 600; cursor: pointer; list-style: none; }
-    details p { margin-top: 10px; font-size: 0.92rem; color: var(--muted); }
-    .closing { background: var(--tapajos); color: #faf6ef; padding: 76px 0; text-align: center; }
-    .closing-box { max-width: 680px; }
-    .closing h2 { color: #ffffff; }
-    .closing h2 em { color: #e2be84; }
-    .closing p { color: #dce5e2; margin-bottom: 26px; }
-    .footer { background: #163731; color: #c7d4d0; padding: 36px 0; font-size: 0.82rem; }
-    .footer-wrap { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
-    .footer a { color: #e2be84; text-decoration: none; }
-    .credit { margin-top: 4px; opacity: 0.8; font-size: 0.76rem; }
-    .wa-float {
-      position: fixed;
-      right: 20px;
-      bottom: 20px;
-      background: #25d366;
-      color: #ffffff;
-      font-weight: 700;
-      font-size: 0.85rem;
-      text-decoration: none;
-      padding: 13px 20px;
-      border-radius: 50px;
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.18);
-      z-index: 60;
-    }
-    @media (max-width: 820px) {
-      .nav-links { display: none; }
-      .hero-grid, .catalog-grid, .moments-grid, .creator-grid { grid-template-columns: 1fr; }
-      .ritual-box { padding: 28px; }
-    }
-  </style>
+  <link href="https://googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,600&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <div class="top-banner">
-    EDIÇÃO LIMITADA DE RÉVEILLON 2027 · Encomendas sob medida até 10/12 (conforme disponibilidade da agenda artesanal)
-  </div>
+  <div class="top-banner">EDIÇÃO LIMITADA DE RÉVEILLON 2027 · Encomendas sob medida até 10/12 (conforme disponibilidade da agenda artesanal)</div>
 
   <header class="navbar">
     <div class="wrap nav-wrap">
@@ -229,3 +24,135 @@
         <a href="#ritual">Banho de Cheiro</a>
         <a href="#criadora">A Criadora</a>
         <a href="#duvidas">Dúvidas</a>
+      </nav>
+      <a class="btn btn-outline" href="https://wa.me" target="_blank" rel="noopener">Reservar no WhatsApp</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="kicker">COLEÇÃO BANHO DE CHEIRO · RÉVEILLON 2027</p>
+          <h1>Peças-amuletos tecidas à mão para celebrar a virada em <em>Alter do Chão</em></h1>
+          <p class="lead">Vestir o novo ciclo é escolher o que queremos levar conosco. Moda praia autoral em crochê criada e tecida individualmente por <strong>Elediane Caldas Cunha</strong>, unindo tempo artesanal, fios 100% algodão e a memória sensorial das ervas paraenses.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#colecao">Explorar a coleção</a>
+            <a class="btn btn-secondary" href="https://wa.me" target="_blank" rel="noopener">Consultar agenda no WhatsApp ↗</a>
+          </div>
+          <p class="hero-note">Produção solo 100% manual · Atendimento para Santarém e Alter do Chão (PA)</p>
+        </div>
+        <div class="hero-visual">
+          <div class="visual-frame">
+            <img src="assets/hero.webp" alt="Coleção Banho de Cheiro - Deu Praia" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+            <div class="img-placeholder" style="display:none;"><span>Foto Principal da Coleção<br><small>(assets/hero.webp)</small></span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="colecao">
+      <div class="wrap">
+        <div class="section-head">
+          <p class="kicker">PREÇO CONSCIENTE · TIRAGEM REALMENTE LIMITADA</p>
+          <h2>Peças da Coleção <em>Banho de Cheiro</em></h2>
+          <p class="intro">Cada modelo exige horas dedicadas de tecedura manual e modelagem regulável para vestir com leveza e conforto tropical. Escolha sua peça e confirme disponibilidade diretamente com a criadora.</p>
+        </div>
+        <div class="catalog-grid">
+          <article class="product-card">
+            <div class="product-img">
+              <span class="badge badge-promo">Edição Limitada</span>
+              <img src="assets/jade.webp" alt="Vestido Jade do Tapajós" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="img-placeholder" style="display:none;"><span>Vestido Jade do Tapajós<br><small>(assets/jade.webp)</small></span></div>
+            </div>
+            <div class="product-body">
+              <p class="product-tag">NOITE DA VIRADA · VERDE-TAPAJÓS</p>
+              <h3>Vestido Jade do Tapajós</h3>
+              <p class="product-desc">Modelagem longa com recortes estratégicos e trama artesanal de alto relevo que acompanha o movimento do corpo com frescor e presença.</p>
+              <div class="product-price">
+                <span class="price-old">De R$ 1.190,00</span>
+                <span class="price-now">R$ 980,00</span>
+                <span class="price-note">Fios 100% algodão · Sob medida ou pronta-entrega limitada</span>
+              </div>
+              <a class="btn btn-primary btn-full" href="https://wa.me" target="_blank" rel="noopener">Consultar reserva no WhatsApp</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img">
+              <span class="badge">Destaque Solar</span>
+              <img src="assets/solar.webp" alt="Conjunto Aurora Solar" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="img-placeholder" style="display:none;"><span>Conjunto Aurora Solar<br><small>(assets/solar.webp)</small></span></div>
+            </div>
+            <div class="product-body">
+              <p class="product-tag">PÔR DO SOL & VIRADA · TONS DE AREIA</p>
+              <h3>Conjunto Aurora Solar</h3>
+              <p class="product-desc">Top estruturado frente única com amarração ajustável e saia longa de fenda fluida em pontos abertos que valorizam a luz do fim de tarde.</p>
+              <div class="product-price">
+                <span class="price-now">Sob consulta</span>
+                <span class="price-note">Modelagem regulável · Produção sob encomenda até 10/12</span>
+              </div>
+              <a class="btn btn-primary btn-full" href="https://wa.me" target="_blank" rel="noopener">Consultar valor e prazo</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img">
+              <img src="assets/saia.webp" alt="Saia Envelope & Top" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="img-placeholder" style="display:none;"><span>Saia Envelope & Top<br><small>(assets/saia.webp)</small></span></div>
+            </div>
+            <div class="product-body">
+              <p class="product-tag">MODELAGEM REGULÁVEL · DIA & NOITE</p>
+              <h3>Saia Envelope & Top com Amarrações</h3>
+              <p class="product-desc">Peças versáteis desenhadas para se adaptar naturalmente a diferentes corpos, transitando da beira-rio às festas pé na areia.</p>
+              <div class="product-price">
+                <span class="price-now">R$ 550,00</span>
+                <span class="price-note">Peça avulsa · Consulte combinações de conjunto</span>
+              </div>
+              <a class="btn btn-primary btn-full" href="https://wa.me" target="_blank" rel="noopener">Encomendar esta peça</a>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-img">
+              <img src="assets/acessorios.webp" alt="Acessórios em Crochê" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+              <div class="img-placeholder" style="display:none;"><span>Acessórios Sensoriais<br><small>(assets/acessorios.webp)</small></span></div>
+            </div>
+            <div class="product-body">
+              <p class="product-tag">COMPLEMENTOS AUTORAIS</p>
+              <h3>Bolsas de Praia & Biojoias em Crochê</h3>
+              <p class="product-desc">Acessórios de tamanho único tecidos à mão para compor seu look de viagem ou presentear com identidade amazônica.</p>
+              <div class="product-price">
+                <span class="price-now">A partir de R$ 200,00</span>
+                <span class="price-note">Unidades limitadas para dezembro</span>
+              </div>
+              <a class="btn btn-primary btn-full" href="https://wa.me" target="_blank" rel="noopener">Ver unidades disponíveis</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sand" id="ritual">
+      <div class="wrap ritual-box">
+        <p class="kicker">MANIFESTO & EXPERIÊNCIA DE UNBOXING</p>
+        <h2>Entre a água doce, o fio e o <em>aroma</em></h2>
+        <p>Na Amazônia, o Banho de Cheiro evoca a memória afetiva das ervas, flores e saberes que marcam a passagem do tempo. Traduzimos essa atmosfera em uma experiência de entrega delicada e segura:</p>
+        <ul class="ritual-list">
+          <li><strong>Embalagem de Apresentação & Ecobag:</strong> Acondicionamento cuidadoso em papel de seda e embalagem reutilizável acompanhada de tag com a história da peça.</li>
+          <li><strong>Cartão Aromático Separado da Fibra:</strong> Notas inspiradas em priprioca e patchouli aplicadas apenas em cartão separado — nunca direto no crochê, preservando os fios <em>(opção sem aroma sob solicitação)</em>.</li>
+          <li><strong>Fios 100% Algodão:</strong> Toque macio na pele, acabamento revisado ponto a ponto e guia completo de conservação.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="criadora">
+      <div class="wrap creator-grid">
+        <div class="creator-img">
+          <img src="assets/criadora.webp" alt="Elediane Caldas Cunha" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+          <div class="img-placeholder" style="display:none;"><span>Elediane Caldas Cunha<br><small>(assets/criadora.webp)</small></span></div>
+        </div>
+        <div>
+          <p class="kicker">FAZER MENOS · FAZER BEM · COM INTENÇÃO</p>
+          <h2>Criada e tecida pessoalmente por <em>Elediane Caldas Cunha</em></h2>
+          <p>À frente da <strong>Deu Praia</strong>, Elediane desenha, modela e tece individualmente cada peça dentro do seu ateliê autoral — sem produção em massa ou terceirização.</p>
