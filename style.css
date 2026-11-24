@@ -103,7 +103,10 @@ h1 em, h2 em { font-style: italic; color: var(--terracotta); }
 .hero-note { font-size: 0.8rem; color: var(--tapajos); font-weight: 600; }
 
 .visual-frame {
-    border-radius: 12px;
+  width: 100%;
+  max-width: 440px;
+  margin-left: auto;
+  border-radius: 12px;
   overflow: hidden;
   border: 1px solid var(--line);
   background: var(--sand);
