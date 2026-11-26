@@ -50,6 +50,7 @@ h1 em, h2 em { font-style: italic; color: var(--terracotta); }
 }
 .nav-inner {
   max-width: 1120px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   align-items: center;
