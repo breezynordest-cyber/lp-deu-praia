@@ -1,4 +1,4 @@
-:root {
+mmm:root {
   --bg: #faf6ef;
   --sand: #f1e8da;
   --surface: #ffffff;
@@ -86,7 +86,7 @@ body {
 .kicker {
   font-size: 0.72rem;
   font-weight: 700;
-  letter-spacing: 0.18em;
+  letter-spacing: 0.10em;
   color: var(--gold);
   text-transform: uppercase;
   margin-bottom: 12px;
@@ -258,7 +258,7 @@ h1, h2, h3 { text-wrap: balance; }
   .ritual-box { padding: 28px; }
     h2 { font-size: 1.65rem; line-height: 1.2; }
   .product-body h3 { font-size: 1.32rem; line-height: 1.25; }
-  .kicker { font-size: 0.68rem; letter-spacing: 0.1em; }
+  .kicker { font-size: 0.60rem; letter-spacing: 0.06em; }
   .product-tag { font-size: 0.66rem; letter-spacing: 0.06em; }
 
 }
